@@ -1,0 +1,122 @@
+
+
+#nav-left {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-left div {
+  width: 90px;
+}
+
+.center{
+  margin-left: 25%;
+}
+#nav-right {
+  width: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-right div {
+  width: 150px;
+  text-align: center;
+}
+.pad{
+  padding-left: 10px;
+  padding-right:180px;
+  padding-top: 15px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+.pad1{
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 120px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+.pad3{
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 170px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+.pad3_1{
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 13px;
+  padding-right: 140px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+.pad4{
+  width:150px;
+  padding-left: 20px;
+  height: 80px;
+  padding-top: 20px;
+  padding-right:0px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+}
+.pad5{
+  width:200px;
+  padding-left:20px;
+  height: 80px;
+  border-bottom: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+}
+.t2s{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 28px;
+/* identical to box height, or 233% */
+
+display: flex;
+align-items: center;
+letter-spacing: 5px;
+
+color: #323C4C;
+}
+.text2{
+padding-left: 5%;
+font-family: Sarabun;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+;
+/* identical to box height, or 200% */
+align-items: center;
+letter-spacing: 0.75px;
+
+/* Botnoi Lightblue */
+
+
+
+}
+
+.nonActive{
+  border-radius: 12px;
+  background-color: #E5E5E5;
+  color: black;
+  fill: #323C4C;
+}
+
+.active {
+  background-color: #B1EAFC;
+  color: #01BFFB;
+  fill: #01BFFB;
+}
+button:hover{
+  background-color: #B1EAFC;
+  color: #01BFFB;
+  fill: #01BFFB;
+  transition: 0.3s;
+}
+

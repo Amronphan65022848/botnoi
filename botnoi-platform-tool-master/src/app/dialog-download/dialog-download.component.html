@@ -1,0 +1,56 @@
+<div class="container-dialog-download">
+<!-- ---------------step 1----------------- -->
+<div *ngIf="step==1" >
+<div class="close-dialog-download">
+    <span class="material-icons" mat-dialog-close> close </span>
+</div>
+<div class="icon-dialog-download">
+    <span><img src="../../assets/img/downloadfileRed.png" /></span>
+</div>
+<div class="text1-dialog-download">
+    <div class="text-not-enough-coins">เหรียญของคุณไม่พอ กรุณาเติมเหรียญ</div>
+    <div class="text-want-to-by-coins">ต้องการซื้อเหรียญเพิ่มหรือไม่</div>
+</div>
+
+<div class="grid-container">
+    <button mat-flat-button class="button-buycoins-cancle" [mat-dialog-close]="false">ยกเลิก</button>
+    <button mat-flat-button class="button-buycoins-comfirm" [mat-dialog-close]="true">ตกลง</button>
+</div>
+</div>
+<!-- ---------------step 2----------------- -->
+<div *ngIf="step==2" >
+<div class="close-dialog-download">
+    <span class="material-icons" mat-dialog-close> close </span>
+</div>
+<div class="icon-dialog-download">
+    <span><img src="../../assets/img/downloadfile.png" /></span>
+</div>
+<div class="text1-dialog-download">
+    <div class="text-not-enough-coins">ยืนยันการดาวโหลดไฟล์เสียง</div>
+    <div class="text-want-to-by-coins">ยืนยันการจ่าย Point 35 PT</div>
+</div>
+
+<div class="grid-container">
+    <button mat-flat-button class="button-buycoins-cancle" [mat-dialog-close]="true">ยกเลิก</button>
+    <button mat-flat-button class="button-buycoins-comfirm" (click)="next()" >ตกลง</button>
+</div>
+</div>
+<!-- ---------------step 3----------------- -->
+<div *ngIf="step==3" >
+<div class="close-dialog-download">
+    <span class="material-icons" mat-dialog-close> close </span>
+</div>
+<div class="icon-dialog-download">
+    <span><img src="../../assets/img/downloadSuccess.png" /></span>
+</div>
+<div class="text1-dialog-download">
+    <div class="text-not-enough-coins">ดาวน์โหลดไฟล์เสียงสำเร็จ</div>
+    <div class="text-want-to-by-coins">การดาวน์โหลดไฟล์สำเร็จแล้ว</div>
+</div>
+
+<div >
+    
+    <button mat-flat-button class="confirm" [mat-dialog-close]="true">ตกลง</button>
+</div>
+</div>
+</div>

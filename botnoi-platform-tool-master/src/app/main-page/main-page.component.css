@@ -1,0 +1,45 @@
+.section1{
+  height: 100vh;
+}
+.section1 .maintext{
+position: absolute;
+font-family: Sarabun;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 47px;
+letter-spacing: 0.15em;
+
+/* white */
+
+color: black;
+left: 18%;
+right: 57%;
+top: 28%;
+bottom: 93%;
+color:white;
+}
+
+.section1 .maintext .subtext{
+font-family: Sarabun;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+margin-top:5%;
+}
+.section1 .maintext .subtext2{
+width: 450px;
+margin-top:5%;
+font-family: Sarabun;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+color: #FFFFFF;
+}
+.section1 .d_img{
+  position: absolute;
+  top: 25%;
+bottom: 93%;
+}

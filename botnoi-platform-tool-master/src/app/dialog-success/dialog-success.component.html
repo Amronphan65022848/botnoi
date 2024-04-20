@@ -1,0 +1,56 @@
+<div class="container-dialog">
+  <!-- ---------------step 1----------------- -->
+  <div *ngIf="step==1" class="payment-qrcode-step1">
+  <div class="topic-payment">
+
+    <span class="material-icons" mat-dialog-close> close </span>
+  </div>
+
+
+<div class="img_comfirm_contain">
+  <img src="assets/img/confirm_icon.png" class="img_confirm center" alt="">
+</div>
+<div class="main_text">
+  ชำระเงินสำเร็จแล้ว
+</div>
+<div class="sub_text">
+  เหรียญของคุณมี  <span> <img src="assets/img/point.png" alt="" srcset=""> </span> <span> 1000 </span> <span>PT</span>
+</div>
+
+
+
+
+    <div class="total-price-payment">
+      <button mat-flat-button class="button-buycoins" (click)="next()">ใบเสร็จชำระเงิน</button>
+    </div>
+
+</div>
+  <!-- ---------------step 2----------------- -->
+  <div *ngIf="step == 2"class="payment-qrcode-step2">
+  <div class="topic-payment2">
+    <div class="text-payment">
+      <span class="material-icons" (click)="back()" style="cursor: pointer;"> arrow_back_ios </span>
+    </div>
+    <span class="material-icons"  mat-dialog-close> close </span>
+  </div>
+  <div class="img_comfirm_contain">
+    <img src="assets/img/confirm_icon.png" class="img_confirm center" alt="">
+  </div>
+  <div class="main_text">
+    ชำระเงินสำเร็จแล้ว
+  </div>
+  <div class="sub_text">
+    เหรียญของคุณมี  <span> <img src="assets/img/point.png" alt="" srcset=""> </span> <span> 1000 </span> <span>PT</span>
+  </div>
+
+
+  <div class="button_contain">
+    <button mat-flat-button class="button-buycoins" (click)="next()">ใบเสร็จชำระเงิน</button>
+    <button mat-flat-button class="button-buycoins" (click)="next()">ใบเสร็จชำระเงิน</button>
+  </div>
+</div>
+ <!-- ---------------step 3----------------- -->
+
+
+
+</div>

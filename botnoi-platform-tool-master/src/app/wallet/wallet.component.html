@@ -1,0 +1,54 @@
+<div class="container-wallet">
+  <div>
+    <p class="topic-mywallet">MyWallet</p>
+  </div>
+
+    <div class="section-mywallet">
+      <div>
+        <span>เหรียญของฉัน :</span>
+      </div>
+      <div class="coins-right">
+        <span><img src="../../assets/img/point.png"  /></span>
+        <span>1,000</span>
+        <span>PT</span>
+      </div>
+    </div>
+
+    <div class="topic-buycoins">
+      <div> ซื้อเหรียญ :</div>
+
+      <div class="section-mywallet" *ngFor="let coin of coinsPayment">
+
+        <div class="coins-right">
+          <span><img src="../../assets/img/point.png"  /></span>
+          <span>{{coin*2}}</span>
+          <span>PT</span>
+        </div>
+        <div>
+
+            <button mat-flat-button class="button-buycoins" (click)="openDialog(coin)" [value]="coin"   >{{coin}} THB</button>
+          </div>
+      </div>
+
+      <div class="section-mywallet">
+
+        <div class="coins-right">
+          <span><img src="../../assets/img/point.png"  /></span>
+          <span>ระบุจำนวนที่ต้องการ</span>
+          <form>
+          <input [(ngModel)]="customcoin" [ngModelOptions]="{standalone: true}" type="text" class="buycoins-coins" >
+        </form>
+          <span>PT</span>
+        </div>
+        <div>
+
+            <button mat-flat-button class="button-buycoins" (click)="openDialogcustomcoin()">{{customcoin}} THB</button>
+
+          </div>
+      </div>
+
+  </div>
+  <div [formGroup]="profile1">
+
+  </div>
+

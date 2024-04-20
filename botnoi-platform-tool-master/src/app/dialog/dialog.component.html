@@ -1,0 +1,73 @@
+<div class="container-dialog">
+  <!-- ---------------step 1----------------- -->
+  <div *ngIf="step==1" class="payment-qrcode-step1">
+  <div class="topic-payment">
+    <div class="text-payment">ชำระเงิน</div>
+    <span class="material-icons" mat-dialog-close> close </span>
+  </div>
+
+  <div class="order-list">
+    <div class="text-order-list">รายการสั่งซื้อ</div>
+    <div class="section-payment" >
+      <div class="coins-right-payment" >
+        <span><img src="../../assets/img/point.png" /></span>
+        <span  >{{payment*2}}</span>
+        <span>PT</span>
+      </div>
+      <div class="coins-right-payment1">
+        <span>{{payment}} </span>
+        <span>THB</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-method">
+    <div class="text-payment-method">วิธีการชำระเงิน</div>
+    <div class="payment-method-qrcode">
+      <span><img src="../../assets/img/image 20.png" /></span>
+      <span>Scan QR Code</span>
+    </div>
+  </div>
+
+  <div class="total-price">
+    <div class="total-price-payment" style="font-size: 17px;">
+      <span style="font-size: 17px;">ราคาทั้งหมด :</span>
+      <span style="font-size: 17px;">{{payment}}</span>
+      <span style="font-size: 17px;">TH</span>
+    </div>
+    <div class="total-price-payment">
+      <span><button mat-flat-button class="button-buycoins" (click)="next()">ยืนยันการจ่าย</button></span>
+    </div>
+  </div>
+</div>
+  <!-- ---------------step 2----------------- -->
+  <div *ngIf="step == 2"class="payment-qrcode-step2">
+  <div class="topic-payment">
+    <div class="text-payment">
+      <span class="material-icons" (click)="back()" style="cursor: pointer;"> arrow_back_ios </span>
+      <span class="text-payment-step2"> ชำระเงิน </span>
+    </div>
+    <span class="material-icons"  mat-dialog-close> close </span>
+  </div>
+  <div class="order-list-step2">
+    <div class="text-order-list-step2">QR CODE</div>
+    <div class="section-payment-step2">
+      <div class="text-scan">Scan with mobile banking</div>
+           <qrcode [qrdata]="qr" [width]="256" [errorCorrectionLevel]="'M'" [allowEmptyString]="true"></qrcode>
+      <div class="price-step2">
+        <span>{{payment*2}}</span>
+        <span>PT</span>
+      </div>
+      <div class="price-step2">
+        <span>Total : </span>
+        <span>{{payment}}</span>
+        <span>THB</span>
+      </div>
+    </div>
+    <div class="total-price-payment-step2">
+      <button mat-flat-button class="button-buycoins" [mat-dialog-close]="true">ตกลง</button>
+    </div>
+  </div>
+</div>
+</div>
+

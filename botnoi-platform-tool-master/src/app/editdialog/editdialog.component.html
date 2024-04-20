@@ -1,0 +1,136 @@
+<div class="card">
+  <div class="topic-edit">
+    <div class="text-edit">แก้ไขคำอ่านผิด</div>
+    <span class="material-icons" mat-dialog-close> close </span>
+  </div>
+  <div class="form-edit-word">
+    <!-- <div class="row">
+            <div class="col-sm-12 col-md-6" style="margin-top:2%">
+                <div class="sub-card">
+
+                    <div style="border-bottom:1px solid #323C4C;background-color: #EAEDF0;border-radius:15px 15px 0px 0px ;z-index: -10;">
+                        <div class="sub-head">
+                            ตัวอย่างคำเขียน
+                        </div>
+                        <div class="ic">
+                            <img src="../../assets/img/audio.png" alt="">
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px;padding-left:5px;">
+                        อูเบอร์
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6" style="margin-top:2%;">
+                <div class="sub-card">
+
+                    <div style="border-bottom:1px solid #323C4C;background-color: #EAEDF0;border-radius:15px 15px 0px 0px ;z-index: -10;">
+                        <div class="sub-head">
+                            ตัวอย่างคำอ่าน
+                        </div>
+                        <div class="ic">
+                            <img src="../../assets/img/audio.png" alt="">
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px;padding-left:5px;">
+                        อู-เบ้อร์
+                    </div>
+                </div>
+            </div>
+
+
+        </div> -->
+    <form [formGroup]="formWords">
+      <div formArrayName="words">
+        <!-- input section -->
+        <div *ngFor="let s of arrWord.controls; let i = index">
+          <div class="row" [formGroupName]="i">
+            <div class="col-sm-12 col-md-6" style="margin-top: 2%">
+              <div class="sub-card-input">
+                <div>
+                  <div class="sub-head">คำเขียน</div>
+                  <div class="ic">
+                    <img src="../../assets/img/audio.png" alt="" />
+                  </div>
+                </div>
+                <div style="padding-top: 0px; padding-left: 5px">
+                  <div class="ipform">
+                    <div style="padding-top: 10px; padding-left: 5px">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        formControlName="write"
+                        matInput
+                        placeholder="พิมพ์คำเขียน..."
+                        [value]="data"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6" style="margin-top: 2%">
+              <div class="sub-card-input">
+                <div>
+                  <div class="sub-head">คำอ่าน</div>
+                  <div class="ic">
+                    <img src="../../assets/img/audio.png" alt="" />
+                  </div>
+                </div>
+                <div style="padding-top: 10px; padding-left: 5px">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    formControlName="read"
+                    matInput
+                    placeholder="พิมพ์คำอ่านสะกดคำ..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          text-align: center;
+          border: 2px dashed #01bffb;
+          margin-top: 5%;
+          box-sizing: border-box;
+          padding: 5px;
+        "
+      >
+        <button
+          (click)="addWord()"
+          class="btn"
+          style="width: 100%; padding: 0; margin: 0"
+        >
+          <i class="material-icons"> add </i><span>เพิ่มคำ</span>
+        </button>
+      </div>
+    </form>
+    <!-- button section -->
+  </div>
+  <div style="text-align: right">
+    <button
+      type="submit"
+      (click)="submit()"
+      mat-button
+      class="btn"
+      style="
+        width: 200px;
+        padding: 5px;
+        margin-top: 2%;
+        background: #01bffb;
+        border-radius: 10px;
+        color: white;
+      "
+    >
+      บันทึก
+    </button>
+  </div>
+</div>

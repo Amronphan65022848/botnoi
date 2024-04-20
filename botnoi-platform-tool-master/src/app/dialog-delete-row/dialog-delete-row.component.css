@@ -1,0 +1,67 @@
+.container-dialog {
+  padding: 0px;
+  width: 400px;
+  height: 320px;
+}
+.topic-payment {
+  text-align: right;
+
+
+
+}
+.img_delete_contain{
+  margin-top:10%;
+  display: flex;
+  justify-content: center;
+}
+.main_text{
+  margin-top: 4%;
+font-family: Sarabun;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 29px;
+letter-spacing: 1px;
+text-align: center;
+color: #000000;
+}
+.sub_text{
+  margin-top: 2%;
+font-family: Sarabun;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+text-align: center;
+
+/* black */
+
+color: #000000;
+
+}
+.button_contain{
+  margin-top:5%;
+  display: flex;
+  justify-content: center;
+}
+.button-cancle{
+  border-radius: 8px;
+  color: #01BFFB;
+  background-color: white;
+  border: 1px solid #01BFFB;
+  margin-right: 5%;
+  padding: 10px 15px 10px 15px;
+}
+
+
+
+
+.button-accept{
+  border-radius: 8px;
+  color: white;
+  background-color: #01bffb;
+  border: 1px solid #01BFFB;
+  margin-left:5%;
+  padding: 10px 15px 10px 15px;
+}

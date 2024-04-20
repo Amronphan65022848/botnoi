@@ -1,0 +1,84 @@
+.container-dialog-download {
+  padding: 0px;
+  width: 554px;
+}
+/* ------------step1-------------------- */
+.close-dialog-download {
+  float: right;
+
+}
+.icon-dialog-download img {
+  display: block;
+  margin: auto;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+.text-not-enough-coins {
+  font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.text-want-to-by-coins {
+  font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button-buycoins-cancle {
+  border-radius: 10px;
+  color: #01bffb;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5x 40px;
+  width: 96px;
+  border: 1px solid #01bffb;
+  margin-left: 150px;
+  background-color: #ffffff;
+}
+.button-buycoins-comfirm {
+  background: #01bffb;
+  border-radius: 10px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-color: #01bffb;
+  width: 96px;
+}
+
+.confirm-cancle {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 10px 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.confirm {
+  display: block;
+  margin: auto;
+  background: #01bffb;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 10px;
+  border-color: #01bffb;
+  width: 96px;
+}

@@ -1,0 +1,22 @@
+<div class="container-dialog">
+  <div class="topic-payment">
+    <span class="material-icons" mat-dialog-close> close </span>
+  </div>
+
+
+<div class="img_delete_contain">
+  <img src="assets/img/bin.png" class="img_confirm center" alt="">
+</div>
+<div class="main_text">
+ ยืนยันการลบข้อมูล
+</div>
+<div class="sub_text">
+ คุณต้องการลบ {{value}} รายการใช่หรือไม่
+</div>
+
+
+<div class="button_contain">
+  <button button class="button-cancle" (click)="dialogRef.close(false)" >ยกเลิก</button>
+  <button button class="button-accept" (click)="dialogRef.close(true)" >ยืนยัน</button>
+</div>
+</div>

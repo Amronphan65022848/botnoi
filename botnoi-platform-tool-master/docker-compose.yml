@@ -1,0 +1,10 @@
+version: "2"
+services:
+  bn-text2speech:
+    image: registry.gitlab.com/botnoi-text2speech/bn-text2speech:master
+    container_name: bn-text2speech
+    restart: always
+    command: npm run start
+    ports:
+      - 3000:3000
+    network_mode: bridge

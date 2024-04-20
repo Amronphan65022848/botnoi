@@ -1,0 +1,192 @@
+<mat-toolbar style="height: 80px; background-color: #f7f8fa;padding: 0%;">
+  <div id="nav-left">
+    <div class="pad">
+      <img
+        class="center"
+        src="assets/img/Botnoi SME.png"
+        style="width: 120px; margin-left: 20px"
+        alt=""
+        srcset=""
+      />
+      <br />
+      <span class="t2s"> TEXT TO SPEECH</span>
+    </div>
+
+    <div class="pad1">
+      <button
+      mat-button
+      style="border-radius: 12px"
+      routerLink="/main"
+      routerLinkActive="active"
+      class="nonActive"
+      >
+        <mat-icon>
+          <span class="material-icons-outlined" style="font-size: 20px">
+            home
+          </span>
+        </mat-icon>
+        <span style="padding-left: 5%">หน้าหลัก</span>
+      </button>
+    </div>
+
+    <div class="pad3">
+      <button
+        mat-button
+        style="border-radius: 12px"
+        routerLink="/text2speech"
+        routerLinkActive="active"
+       [routerLinkActiveOptions]="{exact:true}"
+        class="nonActive"
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0)">
+            <path
+              d="M6.18609 18.532C6.02114 18.532 5.85618 18.4691 5.73037 18.3432C3.51716 16.13 3.51716 12.5289 5.73037 10.3157C5.98204 10.064 6.39015 10.064 6.64186 10.3157C6.89356 10.5674 6.89356 10.9755 6.64186 11.2272C4.93125 12.9378 4.93125 15.7212 6.64186 17.4317C6.89356 17.6834 6.89356 18.0915 6.64186 18.3432C6.516 18.4691 6.35105 18.532 6.18609 18.532Z"
+            />
+            <path
+              d="M8.60405 16.544C8.43909 16.544 8.27414 16.481 8.14833 16.3552C7.03141 15.2382 7.03141 13.4209 8.14833 12.304C8.39999 12.0523 8.8081 12.0523 9.05981 12.304C9.31152 12.5556 9.31152 12.9638 9.05981 13.2155C8.44549 13.8298 8.44549 14.8294 9.05981 15.4437C9.31152 15.6953 9.31152 16.1035 9.05981 16.3552C8.93391 16.4811 8.769 16.544 8.60405 16.544Z"
+            />
+            <path
+              d="M3.76173 20.466C3.59678 20.466 3.43182 20.4031 3.30601 20.2772C0.0264151 16.9976 0.0264151 11.6613 3.30601 8.38162C3.55772 8.12995 3.96583 8.12995 4.21749 8.38162C4.4692 8.63328 4.4692 9.0414 4.21749 9.2931C1.4405 12.0701 1.4405 16.5887 4.21749 19.3657C4.4692 19.6174 4.4692 20.0255 4.21749 20.2772C4.09164 20.4031 3.92669 20.466 3.76173 20.466Z"
+            />
+            <path
+              d="M20.5093 22C20.2637 22 20.0291 21.8589 19.9215 21.6206L19.0525 19.6964C18.9177 19.3979 18.6178 19.2083 18.2916 19.2144C17.1472 19.2344 15.7418 19.2555 15.0246 19.2413C14.253 19.2261 13.8033 18.8985 13.5619 18.6263C13.2274 18.2494 13.074 17.7343 13.1298 17.1762C13.1621 16.8527 13.0747 16.7425 12.9006 16.5231C12.769 16.3571 12.6051 16.1505 12.526 15.8564C12.4061 15.4098 12.5813 14.923 12.9725 14.6163C12.99 14.6027 13.0082 14.5898 13.027 14.578L14.3221 13.7633L12.3866 13.029C12.3701 13.0227 12.3538 13.0158 12.3379 13.0082C11.8755 12.7879 11.6196 12.2826 11.7155 11.7795L11.9659 10.4651C11.9914 10.3312 11.9619 10.1962 11.8828 10.085C11.8037 9.97379 11.6859 9.90165 11.5509 9.8818L10.2767 9.6945C9.92405 9.64259 9.62177 9.41967 9.46803 9.09823C9.31429 8.77682 9.33049 8.40158 9.51134 8.09462L11.9399 3.97233C12.3094 3.3453 12.4551 2.60336 12.3504 1.88317L12.1837 0.73738C12.1325 0.385127 12.3765 0.0580096 12.7288 0.00679147C13.0811 -0.0444267 13.4081 0.19959 13.4593 0.551844L13.626 1.69763C13.7729 2.70739 13.5685 3.74761 13.0506 4.62669L10.7882 8.46681L11.7384 8.6065C12.2243 8.678 12.6486 8.93774 12.9332 9.33786C13.2179 9.73798 13.324 10.224 13.2321 10.7064L13.0075 11.8859L15.1828 12.7112C15.5663 12.8567 15.8299 13.2006 15.8706 13.6089C15.9113 14.0171 15.7209 14.4064 15.3737 14.6248L13.8188 15.6029C13.8459 15.6405 13.8802 15.6837 13.9105 15.722C14.1298 15.9984 14.4968 16.461 14.4125 17.3044C14.4011 17.418 14.4008 17.6296 14.5262 17.7709C14.654 17.915 14.8816 17.9491 15.05 17.9525C15.7458 17.9662 17.1358 17.9453 18.269 17.9255C19.1116 17.9123 19.8804 18.3976 20.2273 19.1659L21.0963 21.09C21.2428 21.4144 21.0986 21.7962 20.7742 21.9427C20.6881 21.9816 20.598 22 20.5093 22ZM14.7255 13.9164H14.726H14.7255Z"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="4.07047"
+              y1="14.3295"
+              x2="6.83064"
+              y2="14.3295"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#5B6370" />
+              <stop offset="1" stop-color="#323C4C" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear"
+              x1="7.31064"
+              y1="14.3296"
+              x2="9.24859"
+              y2="14.3296"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#5B6370" />
+              <stop offset="1" stop-color="#323C4C" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear"
+              x1="0.846314"
+              y1="14.3294"
+              x2="4.40628"
+              y2="14.3294"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#5B6370" />
+              <stop offset="1" stop-color="#323C4C" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear"
+              x1="9.36322"
+              y1="11"
+              x2="21.1536"
+              y2="11"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#5B6370" />
+              <stop offset="1" stop-color="#323C4C" />
+            </linearGradient>
+            <clipPath id="clip0">
+              <rect width="22" height="22" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <span class="text2">Text to speech</span>
+      </button>
+    </div>
+    <div class="pad3_1">
+      <button
+        mat-button
+        style="border-radius: 12px"
+        routerLink="/wordstore"
+        routerLinkActive="active"
+        class="nonActive"
+
+      [routerLinkActiveOptions]="{exact:true}"
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.2188 0H5.92969C4.36593 0 3.09375 1.27218 3.09375 2.83594V18.9062C3.09375 20.6122 4.4816 22 6.1875 22H18.2188C18.5985 22 18.9062 21.6922 18.9062 21.3125C18.9062 20.9328 18.5985 20.625 18.2188 20.625H6.1875C5.23978 20.625 4.46875 19.854 4.46875 18.9062C4.46875 17.9585 5.23978 17.1875 6.1875 17.1875H18.2188C18.5985 17.1875 18.9062 16.8797 18.9062 16.5V0.6875C18.9062 0.307828 18.5985 0 18.2188 0ZM4.46875 15.9599V2.83594C4.46875 2.02907 5.12282 1.375 5.92969 1.375H5.97266C6.09129 1.375 6.1875 1.47121 6.1875 1.58984V15.6047C6.1875 15.7171 6.101 15.8116 5.9889 15.8188C5.55556 15.8464 5.14624 15.9638 4.77924 16.1523C4.63732 16.2251 4.46875 16.1194 4.46875 15.9599Z"
+          />
+          <path
+            d="M18.2188 18.2188H6.1875C5.80779 18.2188 5.5 18.5266 5.5 18.9062C5.5 19.2859 5.80779 19.5938 6.1875 19.5938H18.2188C18.5985 19.5938 18.9062 19.2859 18.9062 18.9062C18.9062 18.5266 18.5985 18.2188 18.2188 18.2188Z"
+          />
+        </svg>
+
+        <span class="text2">คลังคำศัพท์</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex-fill" style="border-bottom: 1px solid #f3f8f9; height: 78px;"></div>
+
+  <div class="pad4">
+    <button
+      mat-button
+      class="nonActive"
+      routerLink="/wallet"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}"
+    >
+      <img src="assets/img/point.png" alt="" srcset="" />
+      <span style="padding-left: 5%;"
+        >1000 <span style="padding-left: 5%">PT</span></span
+      >
+    </button>
+  </div>
+
+  <!-- <div class="pad5"> -->
+
+  <button mat-button [matMenuTriggerFor]="menu" class="pad5">
+    <img
+      src="assets/img/pf.png"
+      alt=""
+      srcset=""
+      class="avatar"
+      style="
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(white, white),
+          radial-gradient(circle at top right, #01bffb, #75dbca);
+        padding: 0px;
+        background-clip: content-box, border-box;
+      "
+    />
+    <span style="padding-left: 5%; color: black"
+      >Wilawan <span>me.</span>
+    </span>
+
+    <mat-icon style="padding-left: 3%">expand_more</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Sign out</span>
+      </button>
+    </mat-menu>
+  </button>
+
+  <!-- </div> -->
+</mat-toolbar>
